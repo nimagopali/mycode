@@ -1,6 +1,6 @@
 # mycode (Project Title)
 
-This is my first repo to practice Linux and Python.
+This is my first repo to practice Linux and Python..
 
 ## Getting Started
 
@@ -19,4 +19,4 @@ What things are needed to install the software and how to install them. For now,
 
 ## Authors
 
-* **Nima Gopali** - *Initial work* - [YourWebsite](https://example.com/)
+* **Nima Gopali** - *Initial work* - [YourWebsite](h:ttps://example.com/)
