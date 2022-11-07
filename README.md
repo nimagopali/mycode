@@ -1,7 +1,6 @@
 # mycode (Project Title)
 
-One Paragraph of your project description goes here. Describe what you're trying to do.
-What is the purpose of putting up this repo?
+This is my first repo to practice Linux and Python.
 
 ## Getting Started
 
@@ -20,4 +19,4 @@ What things are needed to install the software and how to install them. For now,
 
 ## Authors
 
-* **Your Name** - *Initial work* - [YourWebsite](https://example.com/)
+* **Nima Gopali** - *Initial work* - [YourWebsite](https://example.com/)
