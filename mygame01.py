@@ -33,8 +33,13 @@ def showStatus():
     # check if there's an item in the room, if so print it
     if "item" in rooms[currentRoom]:
       print('You see a ' + rooms[currentRoom]['item'])
+      print("Map Direction:")
+    for k, v in  rooms[currentRoom].items():
+        if k != "item":
+            print(f"Go {k} to enter  {v}")
     print("---------------------------")
-
+    
+        
 
 # an inventory, which is initially empty
 inventory = []
@@ -118,7 +123,7 @@ while True:
 
     ## If a player enters a room with a monster
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print(f'{crayons.green("A monster has got you... GAME OVER!")}')
+        print(f'{crayons.yellow("A monster has got you... GAME OVER!")}')
         break
     ## Define how a player can win
     if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
