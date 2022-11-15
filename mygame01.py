@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """Driving a simple game framework with
    a dictionary object | Alta3 Research"""
+### Added Map Direction in showStatus() that describes every direction you can go from current room
+### Added Living room
 
 import crayons
 
@@ -16,10 +18,6 @@ def showInstructions():
       get [item]
     To win:
         Get to the Garden with a key and a potion! Avoid the monsters!
-    Map direction:
-        south: kitchen
-        east : Dining Room
-        west : Living Room
         
     ''')
 
@@ -27,17 +25,22 @@ def showStatus():
     """determine the current status of the player"""
     # print the player's current location
     print('---------------------------')
+    print('---------------------------')
     print('You are in the ' + currentRoom)
     # print what the player is carrying
     print('Inventory:', inventory)
     # check if there's an item in the room, if so print it
     if "item" in rooms[currentRoom]:
       print('You see a ' + rooms[currentRoom]['item'])
+      print('---------------------------')
+
+    # iterate through key and value in order to describes every direction you can go  
       print("Map Direction:")
     for k, v in  rooms[currentRoom].items():
         if k != "item":
             print(f"Go {k} to enter  {v}")
     print("---------------------------")
+    print('---------------------------\n')
     
         
 
