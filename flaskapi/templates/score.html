@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+   <body>
+    <h1> Hello {{name}}, guess a number!
+      {% if number == 50 %}
+      <h1> You guessed it right! Well done :)</h1>
+      {% elif number > 50  %}
+      <h1>You gussed it high</h1>
+      {% else %}
+      <h1> You guesses it low </h1>
+      {% endif %}
+      
+   </body>
+</html>
+
