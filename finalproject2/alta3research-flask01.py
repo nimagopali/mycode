@@ -90,7 +90,7 @@ def getcookie():
     petChoice = request.cookies.get("petChoice") # 
 
     # return HTML embedded with petChoice (value of petChoice read from cookie)
-    return f'<h1>Welcome {petChoice} lover!</br><h3>To know about the {petChoice} fact, go to the /{petChoice} route!</h3></h1>'
+    return f'<body style="background-color:black; color:white; text-align:center;"><h1>Welcome {petChoice} lover!</br><h3 style="color:red;">To know about the {petChoice} fact, go to the /{petChoice} route!</h3></h1></body>'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=2224)

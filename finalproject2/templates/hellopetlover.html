@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <h1> Hello dear! That is wonderful that you like a {{pet}}. </h1>
-     {% if pet == "cat" %}
-    <p> Cat facts: </p>
-      <h1> The cat's meow is her way of communicating with people. Cats meow for many reasons—to say hello, to ask for things, and to tell us when something's wrong. Meowing is an interesting vocalization in that adult cats don't actually meow at each other, just at people.</h1>
-      {% elif pet == "dog" %}
-      <p> Dog facts: </p>
-      <h1> There have been a few studies around this and it turns out that just like us, dogs have a preferred hand (well, paw) to lead with. You can find out whether your dog is left or right-pawed by giving them their favourite toy or interactive game and seeing which paw they use to help them first.</h1>
-      {% else %}
-      <h1> Choose dog or cat to know about their facts! </h1>
-      {% endif %}
+<style>
+body {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
 </head>
 <body>
-
+<h2> Hello dear! That is wonderful that you like a {{pet}}. </h2>
+     {% if pet == "cat" %}
+     <h1> Cat facts: </h1>
+      <h3 style="color:green;"> The cat's meow is her way of communicating with people. Cats meow for many reasons—to say hello, to ask for things, and to tell us when something's wrong. Meowing is an interesting vocalization in that adult cats don't actually meow at each other, just at people.</h3>
+      {% elif pet == "dog" %}
+      <h1> Dog facts: </h1>
+      <h3 style="color:green;"> There have been a few studies around this and it turns out that just like us, dogs have a preferred hand (well, paw) to lead with. You can find out whether your dog is left or right-pawed by giving them their favourite toy or interactive game and seeing which paw they use to help them first.</h3>
+      {% else %}
+      <h4 style="color:green;"> Choose dog or cat to know about their facts! </h4>
+      {% endif %}
 </body>
 </html>
